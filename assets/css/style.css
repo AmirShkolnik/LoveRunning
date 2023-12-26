@@ -1,61 +1,51 @@
-/* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-/* Asterisk wildcard selector to override default styles added by the browser */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* General styles */
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'lato', sans-serif;
-}
-
-/* Header */
 header {
-    background-color: #ffffff;
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+    background-color: #f3efef;
+    border-bottom: solid 10px rgb(0,0,0,70%);
+
 }
 
-header a {
+nav {
+    text-align: center;
+   padding-bottom: 5px;
+   display: flex;
+   align-items: center; 
+   text-align: center;
+   justify-content: center;
+}
+
+nav > a {
+    display: inline-block;
     text-decoration: none;
-    color: inherit;
-
 }
 
-h1 {
-    font-family: 'oswald', sans-serif;
-    text-transform: uppercase;
+nav > a > div {
+    
+    font-size: 120%;
+    display: inline-flex;
+    color:#f3efef;
+    background-color: #b3d7e4;
+    padding: 10px;
     letter-spacing: 2px;
-    color: #252525;
+    box-shadow: 2px 2px 0px rgb(0, 0, 0, .3);
+    transition: all 0.1s;
+
 }
 
-/* menu */
-menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+a > img {
+    height: 100px;
+    display: flex;
+
 }
 
-/* Main content */
+a { 
+    text-decoration: none;
+    }
+
+a:hover > div {
+    background-color: rgb(150, 204, 223);
+    box-shadow: 0px 0px 0px rgb(0, 0, 0, .3);
+    }
+
 main {
-    background-color: lightblue;
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-}
-
-/* footer */
-footer {
-    background-color: orange;
+    margin: 0;
 }
